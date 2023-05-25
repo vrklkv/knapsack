@@ -1,10 +1,10 @@
-all: output GC.o
+all: output knapsack.o
 
-output: GC.o
-	g++ GC.o -o output
+output: knapsack.o
+	g++ knapsack.o -o output
 
-GC.o: GC.cpp
-	g++ -c GC.cpp
+knapsack.o: knapsack.cpp
+	g++ -c knapsack.cpp
 
 clean:
 	rm *.o output
