@@ -1,0 +1,10 @@
+all: output GC.o
+
+output: GC.o
+	g++ GC.o -o output
+
+GC.o: GC.cpp
+	g++ -c GC.cpp
+
+clean:
+	rm *.o output
